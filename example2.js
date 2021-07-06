@@ -4,7 +4,7 @@ require('chromedriver');
 const {Builder, By, until} = require('selenium-webdriver');
 const test = require('selenium-webdriver/testing');
 
-test.describe('Google Search', function() {
+test.describe('Сценарий логина', function() {
     let driver;
 
     test.before(function *() {
@@ -12,7 +12,7 @@ test.describe('Google Search', function() {
     });
 
     // You can write tests either using traditional promises.
-    it('works with promises', function() {
+    it('Сценарий логина', function() {
         return driver.get('http://localhost/litecart/admin/')
             .then(_ => driver.findElement(By.name('username')).sendKeys('admin'))
             .then(_ => driver.findElement(By.name('password')).sendKeys('admin'))
